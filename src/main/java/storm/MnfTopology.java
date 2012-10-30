@@ -49,16 +49,16 @@ public class MnfTopology {
             public void handle(String target, HttpServletRequest request, HttpServletResponse response, int dispatch) throws IOException, ServletException {
                 response.addHeader("Access-Control-Allow-Origin", "*");
                 PrintWriter out = response.getWriter();
-                out.print("{");
+                out.print("{ \"Teams\" : [");
 
                 int first = 0;
                 for (Map.Entry<String, Integer> score : TeamScoreboard.scoreboard.entrySet()) {
-                    out.print(String.format("%s\"%s\" : %d",
+                    out.print(String.format("%s {\"name\" : \"%s\", \"count\" : %d}",
                             first++ > 0 ? "," : "",
                             score.getKey(),
                             score.getValue()));
                 }
-                out.print("}");
+                out.print("]}");
                 out.close();
             }
         };

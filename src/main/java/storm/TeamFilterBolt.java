@@ -23,8 +23,11 @@ public class TeamFilterBolt implements IRichBolt {
     private OutputCollector collector;
 
     private static enum Team {
-        BRONCOS("broncos","denver","manning","peyton"),
-        SAINTS("saints","new orleans","brees");
+        //BRONCOS("broncos", "denver", "manning", "peyton"),
+        //SAINTS("saints","new orleans", "brees"),
+        FORTYNINERS("sanfrancisco", "san francisco", "san fran", "49ers", "niners", "gore", "davis", "crabtree", "manningham", "moss" ),
+        CARDINALS("cardinals", "cards", "arizona", "ari", "azcardinals", "kolb", "fitzgerald", "skelton", "williams", "roberts");
+
 
         private final List<String> keywords;
         private final String name;
