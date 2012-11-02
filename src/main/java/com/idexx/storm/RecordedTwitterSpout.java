@@ -1,4 +1,4 @@
-package storm;
+package com.idexx.storm;
 
 import backtype.storm.spout.SpoutOutputCollector;
 import backtype.storm.task.TopologyContext;

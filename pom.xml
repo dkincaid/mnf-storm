@@ -96,7 +96,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>storm.MnfTopology</mainClass>
+                            <mainClass>com.idexx.storm.MnfTopology</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

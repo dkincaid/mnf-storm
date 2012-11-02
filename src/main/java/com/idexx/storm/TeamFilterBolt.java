@@ -1,4 +1,4 @@
-package storm;
+package com.idexx.storm;
 
 import backtype.storm.task.OutputCollector;
 import backtype.storm.task.TopologyContext;
@@ -22,7 +22,7 @@ import java.util.Map;
 public class TeamFilterBolt implements IRichBolt {
     private OutputCollector collector;
 
-    private static enum Team {
+      private static enum Team {
         FORTYNINERS("sanfrancisco", "san francisco", "san fran", "49ers", "niners", "gore", "davis", "crabtree", "manningham", "moss" ),
         CARDINALS("cardinals", "cards", "arizona", "ari", "azcardinals", "kolb", "fitzgerald", "skelton", "williams", "roberts");
 
